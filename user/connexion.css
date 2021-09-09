@@ -1,0 +1,47 @@
+body {
+  background: url(../ressources/images/bg.png);
+}
+
+#formInscription {
+  height: 900px;
+  width: 350px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px;
+  border-radius: 10px;
+  border-top: 5px solid #46cb49;
+  border-bottom: 5px solid #46cb49;
+  box-shadow: 0 0 10px #000;
+}
+
+.form-text {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.form-saisie {
+  color: white;
+  font-size: 17px;
+}
+
+.form-saisie input {
+  width: 100%;
+  font-size: 16px;
+  outline: none;
+  background-color: #1f1f22;
+  color: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+#btnInscription {
+  margin-top: 60px;
+}

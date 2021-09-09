@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>McSoupex</title>
+
+    <meta charset="utf-8" />
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!--bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Font-->
+    <link
+      href="http://fonts.googleapis.com/css?family=Holtwood+One+SC"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="MainPage/style2.css" />
+
+    <!--Icon-->
+    <link rel="icon" type="image/png" href="ressources/images/b6.png" />
+    <!--JS-->
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="container site">
+      <h1 class="textLogo">
+        <!--class="glyphicon glyphicon-cutlery" pour afficher du texte fourchette texte fourchette texte-->
+        <span class="glyphicon glyphicon-cutlery"></span> McSoupex
+        <span class="glyphicon glyphicon-cutlery"></span>
+      </h1>
+      <div id="InscriptionMain">
+        <!--Class container fait partie de boostrap-->
+        <div id="pseudoMain" style="color: white"></div>
+        <a href="user/inscription.php" class="btn btn-default">Inscription</a>
+        <a href="user/connexion.php" class="btn btn-default">Connexion</a>
+        <a href="user/account.php" class="btn btn-default">Account</a>
+        <a href="Avis/avis.php" class="btn btn-default">Avis</a>
+      </div>
+
+      <!--Grâce à ajax et à php on va pouvoir remplir cette div des items et des btns menus-->
+      <div id="Menu" class="col-sm-12"></div>
+
+      <footer style="color: white"></footer>
+    </div>
+  </body>
+</html>

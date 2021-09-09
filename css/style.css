@@ -1,0 +1,116 @@
+body {
+  /*Pour l'arrière plan*/
+  /*L'image est fait pour qu'elle se répète sans qu'on la voit*/
+  background: url(../ressources/images/bg.png);
+}
+
+/*Police du site tout entier*/
+.site {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/*Logo du site*/
+.textLogo {
+  font-family: "Holtwood One SC", "sans-serif";
+  color: grey;
+  text-shadow: 2px 2px white; /*Un petit débordement jaune qu'on voit sur le logo 2px en y et en x*/
+  font-size: 50px;
+  padding: 40px 0px;
+  text-align: center;
+}
+
+/*Icon couverts logo*/
+.textLogo .glyphicon {
+  color: darkgrey;
+  /*Comme glyphicon hérite de textLogo je suis obligé de remettre 0px 0px dans textShadow comme je n'en veux pas*/
+  text-shadow: 0px 0px darkgrey;
+}
+
+/*btn .nav*/
+.nav {
+  margin-bottom: 40px;
+}
+/*Background des images*/
+.thumbnail img {
+  /*C'est une image png donc on peut gérer la transparance*/
+  background-color: khaki;
+}
+/*Prix des items*/
+.price {
+  background: #5cb85c;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  /*fonctionne pour les autres navigateurs*/
+  -moz-box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-shadow: 2px 2px #333;
+  position: absolute;
+  right: 6px;
+  top: 20px;
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+/*Avant la classe price on met before*/
+.price:before {
+  border: 4px solid transparent;
+  border-bottom: 4px solid #4a934a;
+  border-left: 4px solid #4a934a;
+  /*Content vide pour l'obliger a afficher le contenu*/
+  content: "";
+  position: absolute;
+  right: 1px;
+  top: -8px;
+}
+
+/*On va chercher le h4 qui est directement dans la class caption ( directement on le note avec > pour dire l'élément qui est juste en dessous donc le premier enfant )*/
+.caption > h4 {
+  color: burlywood;
+  font-size: 18px;
+}
+
+/*Notre système de navigation grace a boostrap*/
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  background: grey;
+}
+/*.focus quand on passe la souris dessus le background deviendra grey*/
+.nav > li > a:focus,
+.nav > li > a:hover {
+  color: darkslategray;
+  background-color: grey;
+}
+
+/*Ecriture en blanc */
+.nav > li > a {
+  color: #eee;
+  font-size: 18px;
+}
+
+.btn-order {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: darkseagreen;
+  text-decoration: none;
+}
+
+.btn-order:hover,
+.btn-order:focus {
+  color: #fff;
+  background-color: darkgreen;
+}
+
+/*Partie admin*/
+.admin {
+  background: #fff;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.help-inline {
+  /*Pour écrire les erreurs*/
+  color: red;
+}

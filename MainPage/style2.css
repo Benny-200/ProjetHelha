@@ -1,0 +1,22 @@
+.btn-default {
+  margin-bottom: 20px;
+  margin-left: 18px;
+}
+
+#welcome {
+  margin-left: 20px;
+  margin-bottom: -50px;
+  font-size: 35px;
+}
+
+#logout {
+  margin-bottom: 20px;
+  position: relative;
+  width: 170px;
+  top: 64px;
+}
+
+#btnpanier {
+  margin-left: 195px;
+  width: 200px;
+}
